@@ -1,9 +1,9 @@
 @import "config";
-
+// Global
 * {
   box-sizing: border-box;
 }
-
+// Body
 body {
   @include background;
   background: $primary-color;
