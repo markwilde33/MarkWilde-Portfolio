@@ -15,7 +15,8 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: $secondary-color;
+    background: set-text-color($primary-color);
+    // background: $secondary-color;
     @include easeOut;
   }
 
@@ -38,6 +39,10 @@
       }
     }
   }
+}
+
+.btn-line:hover {
+  background-color: $secondary-color;
 }
 
 // Menu Overlay

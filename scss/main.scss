@@ -11,7 +11,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: $community-color;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

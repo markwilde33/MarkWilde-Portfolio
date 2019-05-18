@@ -1,7 +1,8 @@
 // Custom variables
-$primary-color: #444;
+$primary-color: rgb(6, 29, 10);
 $secondary-color: #f56a29;
-$community-color: #d5d0c8;
+$color-light: #d5d0c8;
+$color-dark: #000000;
 $links-color: #fff;
 $portrait-bg-color: #2b2424;
 $nav-bg-color: #332c2c;
@@ -34,6 +35,15 @@ $background-opacity: 0.9;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $color-dark;
+  } @else {
+    @return $color-light;
   }
 }
 
