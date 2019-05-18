@@ -10,10 +10,11 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: $community-color;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  // font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
 }
 
@@ -29,7 +30,7 @@ h3 {
   }
 
   &.sm-heading {
-    // font-size: 1.5rem;
+    // font-size: 1.3rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
@@ -37,7 +38,7 @@ h3 {
 }
 // Links
 a {
-  color: #fff;
+  color: $links-color;
   text-decoration: none;
 }
 

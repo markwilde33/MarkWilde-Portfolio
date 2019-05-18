@@ -1,8 +1,14 @@
 // Custom variables
 $primary-color: #444;
-$secondary-color: #eece1a;
+$secondary-color: #f56a29;
+$community-color: #d5d0c8;
+$links-color: #fff;
+$portrait-bg-color: #2b2424;
+$nav-bg-color: #332c2c;
+$menu-img-border-color: #f56a29;
 $show-home-image: true;
-$home-image: url("../img/background.jpg");
+$home-image: url("../img/macB.jpg");
+$portrait-image: url("../img/wolfy.jpg");
 $background-opacity: 0.9;
 // Mixins
 @mixin easeOut {
