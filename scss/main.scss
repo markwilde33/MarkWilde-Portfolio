@@ -80,6 +80,7 @@ main {
   }
 }
 
+// About page
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -100,23 +101,45 @@ main {
     font-size: 1.5rem;
   }
 
-  .job-1 {
+  .segment-1 {
     grid-area: job1;
   }
 
-  .job-2 {
+  .segment-2 {
     grid-area: job2;
   }
 
-  .job-3 {
+  .segment-3 {
     grid-area: job3;
   }
 
-  .job {
-    background: lighten($primary-color, 3);
+  .segment {
+    // background: lighten($primary-color, 3);
+    background: #fff;
+    color: #000;
+    font-size: 1.1rem;
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+
+.about-link {
+  color: $secondary-color;
+
+  &:hover {
+    opacity: 0.3;
+    border-color: $secondary-color;
+    @include easeOut;
+  }
+}
+
+.about-heading,
+.about-text {
+  text-align: center;
+}
+
+.toolbox-heading {
+  color: $secondary-color;
 }
 
 // Work/Projects
@@ -127,7 +150,7 @@ main {
 
   img {
     width: 100%;
-    border: 5px #000 solid;
+    border: 2px #fff solid;
 
     &:hover {
       opacity: 0.5;
@@ -170,7 +193,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem;
   &:hover {
-    background: $secondary-color;
+    background: lighten($primary-color, 85);
     color: set-text-color($secondary-color);
   }
 }
@@ -178,13 +201,13 @@ main {
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 100);
-  color: #fff;
+  color: $links-color;
 }
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 85);
-  color: #333;
+  background: $links-color;
+  color: #000;
 }
 
 #main-footer {

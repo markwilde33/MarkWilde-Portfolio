@@ -74,7 +74,7 @@
     margin: 0;
     padding: 0;
     // background: $nav-bg-color;
-    background: rgba(darken($nav-bg-color, 5), 0.8);
+    background: rgba(darken($nav-bg-color, 5), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
