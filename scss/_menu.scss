@@ -16,7 +16,6 @@
     height: 3px;
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
-    // background: $secondary-color;
     @include easeOut;
   }
 
@@ -50,7 +49,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  // opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -70,10 +68,8 @@
   }
 
   &-nav {
-    // opacity: 0.6;
     margin: 0;
     padding: 0;
-    // background: $nav-bg-color;
     background: rgba(darken($nav-bg-color, 5), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
@@ -87,7 +83,6 @@
 
   // Branding Side
   &-branding {
-    // background: $portrait-bg-color;
     background: rgba($portrait-bg-color, 0.9);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
@@ -103,7 +98,6 @@
       background: $portrait-image;
       border-radius: 50%;
       border: solid 3px $menu-img-border-color;
-      // background-size: cover;
     }
   }
 
