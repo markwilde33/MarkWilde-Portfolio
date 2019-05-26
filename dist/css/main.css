@@ -205,7 +205,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 2px #fff solid; }
+    border: 1px black solid; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #f56a29;
